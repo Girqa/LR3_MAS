@@ -2,8 +2,6 @@ package Agents;
 
 import AdditionalClasses.NodeCfg;
 import AdditionalClasses.ParsingProvider;
-import Behaviours.BackPropagationBehaviour;
-import Behaviours.InitiatorBehaviour;
 import Behaviours.InitiatorFMSBehaviour;
 import Behaviours.RequestProcessingBehaviour;
 import jade.core.Agent;
@@ -14,21 +12,21 @@ import java.io.File;
 
 @Slf4j
 public class NodeAgent extends Agent {
+    public static String path = "src/main/resources/";
     @Override
     protected void setup() {
-        File source = new File("src/main/resources/" + getLocalName().toLowerCase() + ".xml");
+
+        File source = new File(path + getLocalName().toLowerCase() + ".xml");
         NodeCfg cfg = ParsingProvider.unmarshal(source, NodeCfg.class);
         log.info("Created agent {} with config {}", getLocalName(), cfg);
 
         if (cfg.isInitiator()) {
-            addBehaviour(new WakerBehaviour(this, 12000L) {
+            addBehaviour(new WakerBehaviour(this, 16000L) {
                 @Override
                 protected void onWake() {
                     getAgent().addBehaviour(new InitiatorFMSBehaviour(cfg));
-                    //getAgent().addBehaviour(new InitiatorBehaviour(cfg));
                 }
             });
-           // addBehaviour(new InitiatorBehaviour(cfg));
         } else {
             addBehaviour(new RequestProcessingBehaviour(cfg));
         }
