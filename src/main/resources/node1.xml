@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <cfg>
-    <name>node1</name>
+    <name>Node1</name>
     <initiator>true</initiator>
+    <lookForAgent>Node3</lookForAgent>
     <links>
         <link>
-            <neighbour>node2</neighbour>
-            <weight>2</weight>
+            <neighbour>Node2</neighbour>
+            <weight>1</weight>
         </link>
         <link>
-            <neighbour>node3</neighbour>
+            <neighbour>Node3</neighbour>
             <weight>3</weight>
         </link>
     </links>

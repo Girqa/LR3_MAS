@@ -3,6 +3,7 @@ package AdditionalClasses;
 import lombok.Data;
 
 import javax.xml.bind.annotation.*;
+import java.util.List;
 
 @Data
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -12,8 +13,9 @@ public class NodeCfg {
     private String name;
     @XmlElement
     private boolean initiator;
+    @XmlElement
+    private String lookForAgent;
     @XmlElementWrapper(name="links")
     @XmlElement(name="link")
-    private Link[] links;
-
+    private List<Link> links;
 }

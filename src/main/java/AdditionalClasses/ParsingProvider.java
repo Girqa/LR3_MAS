@@ -1,0 +1,41 @@
+package AdditionalClasses;
+
+import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
+import org.codehaus.jackson.map.ObjectMapper;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Unmarshaller;
+import java.io.File;
+
+@Slf4j
+final public class ParsingProvider {
+    private static ObjectMapper mapper = new ObjectMapper();
+
+    private ParsingProvider() {}
+    @SneakyThrows
+    public static <T> T unmarshal(File source, Class<T> clazz) {
+        log.debug("Unmarshalling {}", source.getName());
+        JAXBContext context = JAXBContext.newInstance(clazz);
+        Unmarshaller unmarshaller = context.createUnmarshaller();
+        T result = (T) unmarshaller.unmarshal(source);
+        log.debug("Unmarshalling was successful {}", source.getName());
+        return result;
+    }
+
+    @SneakyThrows
+    public static <T> String toJson(T obj) {
+        log.debug("Converting to JSON: {}", obj.getClass().getName());
+        String result = mapper.writeValueAsString(obj);
+        log.debug("Successfully converted!");
+        return result;
+    }
+
+    @SneakyThrows
+    public static <T> T fromJson(String content, Class<T> clazz) {
+        log.debug("Converting from JSON: {}", content);
+        T result = mapper.readValue(content, clazz);
+        log.debug("Successfully converted!");
+        return result;
+    }
+}

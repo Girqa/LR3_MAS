@@ -1,0 +1,21 @@
+08.11.2022 10:03:26.412 [main] ERROR org.example.Main - ERROR!!! Tue Nov 08 10:03:26 MSK 2022
+08.11.2022 10:03:26.412 [main] WARN  org.example.Main - WARNING Tue Nov 08 10:03:26 MSK 2022
+08.11.2022 10:04:53.167 [main] ERROR org.example.Main - ERROR!!! Tue Nov 08 10:04:53 MSK 2022
+08.11.2022 10:04:53.167 [main] WARN  org.example.Main - WARNING Tue Nov 08 10:04:53 MSK 2022
+08.11.2022 10:05:13.950 [main] ERROR org.example.Main - ERROR!!! Tue Nov 08 10:05:13 MSK 2022
+08.11.2022 10:05:13.950 [main] WARN  org.example.Main - WARNING Tue Nov 08 10:05:13 MSK 2022
+08.11.2022 10:05:23.226 [main] ERROR org.example.Main - ERROR!!! Tue Nov 08 10:05:23 MSK 2022
+08.11.2022 10:05:23.226 [main] WARN  org.example.Main - WARNING Tue Nov 08 10:05:23 MSK 2022
+08.11.2022 10:06:01.994 [main] ERROR org.example.Main - ERROR!!! Tue Nov 08 10:06:01 MSK 2022
+08.11.2022 10:06:01.995 [main] WARN  org.example.Main - WARNING Tue Nov 08 10:06:01 MSK 2022
+10.11.2022 14:11:54.274 [Node1] WARN  B.ResultsProcessingBehaviour - 0
+10.11.2022 14:13:04.487 [Node1] WARN  B.ResultsProcessingBehaviour - 3
+10.11.2022 14:17:21.722 [Node1] WARN  B.ResultsProcessingBehaviour - 3
+10.11.2022 14:21:14.677 [Node1] WARN  B.ResultsProcessingBehaviour - 3
+10.11.2022 14:22:30.060 [Node1] ERROR B.ResultsProcessingBehaviour - Тупиковые маршруты: 
+ passed nodes: [Node1, Node2, Node4] full weight: 2
+10.11.2022 14:22:30.061 [Node1] ERROR B.ResultsProcessingBehaviour - Завершенные маршруты: 
+ passed nodes: [Node1, Node3] full weight: 3
+ passed nodes: [Node1, Node2, Node3] full weight: 2
+10.11.2022 14:22:30.061 [Node1] ERROR B.ResultsProcessingBehaviour - Лучший маршрут: 
+ passed nodes: [Node1, Node2, Node3] full weight: 2
