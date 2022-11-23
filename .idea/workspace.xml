@@ -5,48 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="167a8a6d-c77f-473d-a1c5-e367adfeeaf7" name="Changes" comment="Added tests with new graph and different initiators.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AgentsFactory/AgentDescription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AgentsFactory/AgentFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Eleven_Init_First_Search/node1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Eleven_Init_First_Search/node10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Eleven_Init_First_Search/node11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Eleven_Init_First_Search/node2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Eleven_Init_First_Search/node3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Eleven_Init_First_Search/node4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Eleven_Init_First_Search/node5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Eleven_Init_First_Search/node6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Eleven_Init_First_Search/node7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Eleven_Init_First_Search/node8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Eleven_Init_First_Search/node9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TestFromBook/node1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TestFromBook/node10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TestFromBook/node11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TestFromBook/node2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TestFromBook/node3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TestFromBook/node4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TestFromBook/node5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TestFromBook/node6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TestFromBook/node7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TestFromBook/node8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TestFromBook/node9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Third_Init_Seventh_Search/node1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Third_Init_Seventh_Search/node10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Third_Init_Seventh_Search/node11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Third_Init_Seventh_Search/node2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Third_Init_Seventh_Search/node3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Third_Init_Seventh_Search/node4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Third_Init_Seventh_Search/node5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Third_Init_Seventh_Search/node6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Third_Init_Seventh_Search/node7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Third_Init_Seventh_Search/node8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Third_Init_Seventh_Search/node9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/AdditionalClasses/CreateData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/LabGraph.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Agents/NodeAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agents/NodeAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APDescription.txt" beforeDir="false" afterPath="$PROJECT_DIR$/APDescription.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AdditionalClasses/ParsingProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AdditionalClasses/ParsingProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Behaviours/ResultsProcessingBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Behaviours/ResultsProcessingBehaviour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/node1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SimpleTest/node1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/node2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SimpleTest/node2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/node3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SimpleTest/node3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/node4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SimpleTest/node4.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -87,7 +53,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;B:/Java/MAS/Labs/LR3/src/main/resources/Eleven_Init_First_Search&quot;,
+    &quot;last_opened_file_path&quot;: &quot;B:/Java/MAS/Labs/LR3&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
@@ -105,10 +71,24 @@
       <recent name="B:\Java\MAS\Labs\LR3\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="B:\Java\MAS\Labs\LR3\src\main\resources" />
       <recent name="B:\Java\MAS\Labs\LR3\src\main\resources\TestFromBook" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="CreateData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AdditionalClasses.CreateData" />
+      <module name="LR3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AdditionalClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="LR3" />
@@ -139,12 +119,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.Start" />
+      <item itemvalue="Application.CreateData" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.CreateData" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -159,7 +141,10 @@
       <updated>1667884850544</updated>
       <workItem from="1667884852789" duration="19878000" />
       <workItem from="1667999450695" duration="14102000" />
-      <workItem from="1668087475885" duration="411000" />
+      <workItem from="1668087475885" duration="512000" />
+      <workItem from="1668093229186" duration="10000" />
+      <workItem from="1669048010808" duration="1132000" />
+      <workItem from="1669226403512" duration="4173000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.&#10;Added Logging + lombok">
       <created>1667891413363</created>
@@ -182,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668081069232</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added tests with new graph and different initiators.">
+      <created>1668087969741</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668087969742</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -20,14 +20,20 @@ public class ResultsProcessingBehaviour extends OneShotBehaviour {
 
     @Override
     public void action() {
+        int allWays = answers.size();
         List<MsgContent> deadLocs = answers.stream().filter(msg -> msg.isDeadlock()).collect(Collectors.toList());
+        int allDeadLocs = deadLocs.size();
         answers.removeAll(deadLocs);
         List<MsgContent> rightWays = answers;
         Optional<MsgContent> bestWay = bestWay(rightWays);
+        int allRightWays = rightWays.size();
 
         log.info("\nТупиковые маршруты: \n{}", deadLocs.size() == 0 ? "отсутствуют": joinList(deadLocs));
         log.info("\nЗавершенные маршруты: \n{}", rightWays.size() == 0 ? "отсутствуют": joinList(rightWays));
         log.info("\nЛучший маршрут: \n{}", bestWay.isPresent() ? presentMsgContent(bestWay.get()) : "отсутствует");
+        log.info("\nОбщее число построенных маршрутов {}", allWays);
+        log.info("\nОбщее число тупиковых маршрутов {}", allDeadLocs);
+        log.info("\nОбщее число завершенных маршрутов {}", allRightWays);
     }
 
     private Optional<MsgContent> bestWay(List<MsgContent> rightWays) {
