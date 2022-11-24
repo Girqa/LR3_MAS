@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cfg>
+    <name>Node5</name>
+    <initiator>false</initiator>
+    <links>
+        <link>
+            <neighbour>Node1</neighbour>
+            <weight>24</weight>
+        </link>
+        <link>
+            <neighbour>Node2</neighbour>
+            <weight>25</weight>
+        </link>
+        <link>
+            <neighbour>Node3</neighbour>
+            <weight>18</weight>
+        </link>
+        <link>
+            <neighbour>Node4</neighbour>
+            <weight>19</weight>
+        </link>
+        <link>
+            <neighbour>Node6</neighbour>
+            <weight>22</weight>
+        </link>
+        <link>
+            <neighbour>Node7</neighbour>
+            <weight>11</weight>
+        </link>
+        <link>
+            <neighbour>Node8</neighbour>
+            <weight>27</weight>
+        </link>
+    </links>
+</cfg>

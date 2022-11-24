@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cfg>
+    <name>Node1</name>
+    <initiator>true</initiator>
+    <lookForAgent>Node3</lookForAgent>
+    <links>
+        <link>
+            <neighbour>Node2</neighbour>
+            <weight>1</weight>
+        </link>
+        <link>
+            <neighbour>Node3</neighbour>
+            <weight>3</weight>
+        </link>
+    </links>
+</cfg>
