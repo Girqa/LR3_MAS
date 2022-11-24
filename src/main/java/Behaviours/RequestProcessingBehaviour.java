@@ -36,20 +36,18 @@ public class RequestProcessingBehaviour extends Behaviour {
         if (msg != null) {
             log.info("{} received {}", getAgent().getLocalName(), msg.getContent());
             MsgContent content = processMsg(msg, cfg);
-            // Отсеяли все пройденные узлы
-            List<Link> links = cfg.getLinks()
-                    .stream()
-                    .filter(link -> !content.getPassedNodes().contains(link.getNeighbourAgent()))
-                    .collect(Collectors.toList());
+            List<Link> links = processContent(content);
             ACLMessage request = new ACLMessage(ACLMessage.INFORM);
-            if (!getAgent().getLocalName().equals(content.getLookForAgent()) && links.size() != 0) {
+
+            boolean isTarget = getAgent().getLocalName().equals(content.getLookForAgent());
+            if (!isTarget && links.size() != 0) {
                 // Перенаправили информацию о пути соседям
                 request.setProtocol("processing");
                 String jsonContent = ParsingProvider.toJson(content);
                 request.setContent(jsonContent);
                 sendToNeighbors(request, links);
                 log.info("{} sends {} to {}", getAgent().getLocalName(), content, links);
-            } else if (links.size() == 0 && !getAgent().getLocalName().equals(content.getLookForAgent())){
+            } else if (links.size() == 0 && !isTarget){
                 // Отправили результат инициатору с уточнением, что зашли в тупик
                 content.setDeadlock(true);
                 sendToInitiator(request, content);
@@ -101,5 +99,12 @@ public class RequestProcessingBehaviour extends Behaviour {
         // Включили себя в пройденный путь
         content.getPassedNodes().add(cfg.getName());
         return content;
+    }
+
+    private List<Link> processContent(MsgContent content) {
+        return cfg.getLinks()
+                .stream()
+                .filter(link -> !content.getPassedNodes().contains(link.getNeighbourAgent()))
+                .collect(Collectors.toList());
     }
 }

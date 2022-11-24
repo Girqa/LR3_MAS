@@ -12,7 +12,7 @@ public class InitiatorFMSBehaviour extends FSMBehaviour {
     private final String INIT = "INIT", COLLECT = "COLLECT", PROCESS = "PROCESS";
     public InitiatorFMSBehaviour(NodeCfg cfg) {
 
-        List<MsgContent> answers = new LinkedList<>();
+        List<MsgContent> answers = new ArrayList<>();
 
         registerFirstState(new InitiatorBehaviour(cfg), INIT);
         registerState(new InitiatorParallelBehaviour(getAgent(), answers), COLLECT);

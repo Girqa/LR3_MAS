@@ -21,12 +21,7 @@ public class NodeAgent extends Agent {
         log.info("Created agent {} with config {}", getLocalName(), cfg);
 
         if (cfg.isInitiator()) {
-            addBehaviour(new WakerBehaviour(this, 16000L) {
-                @Override
-                protected void onWake() {
-                    getAgent().addBehaviour(new InitiatorFMSBehaviour(cfg));
-                }
-            });
+            addBehaviour(new InitiatorFMSBehaviour(cfg));
         } else {
             addBehaviour(new RequestProcessingBehaviour(cfg));
         }

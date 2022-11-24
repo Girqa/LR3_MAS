@@ -10,7 +10,7 @@ import java.util.List;
 @Slf4j
 public class Main {
     public static void main(String[] args) {
-        String testPath = "LabGraph/";
+        String testPath = "TestFromBook/";
 
         File configs = new File("src/main/resources/"+testPath);
         NodeAgent.path = configs.getPath()+"/";

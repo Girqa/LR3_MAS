@@ -16,17 +16,16 @@ public class AgentFactory {
         profile.setParameter("gui", "true");
         jade.core.Runtime.instance().setCloseVM(true);
 
-        //Часть активирующая топики
-        //profile.setParameter("services", " jade.core.messaging.TopicManagementService");
-
         AgentContainer mainContainer = jade.core.Runtime.instance().createMainContainer(profile);
         try {
             mainContainer.start();
             try {
-
                 //Создание агентов в рамках одной платформы
                 for (AgentDescription agentDescription : list) {
-                    AgentController newAgent = mainContainer.createNewAgent(agentDescription.getAgentName(), agentDescription.getAClass().getName(), new Object[]{});
+                    AgentController newAgent = mainContainer.createNewAgent(
+                            agentDescription.getAgentName(),
+                            agentDescription.getAClass().getName(),
+                            new Object[]{});
                     newAgent.start();
                 }
 

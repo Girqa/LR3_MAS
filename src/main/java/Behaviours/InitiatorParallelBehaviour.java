@@ -14,7 +14,7 @@ public class InitiatorParallelBehaviour extends ParallelBehaviour {
     public InitiatorParallelBehaviour(Agent a, List<MsgContent> answers) {
         super(a, WHEN_ANY);
         log.debug("Receiving answers started");
-        addSubBehaviour(new WakerBehaviour(getAgent(), 1000L) {});
+        addSubBehaviour(new WakerBehaviour(getAgent(), 2000L) {});
         addSubBehaviour(new BackPropagationBehaviour(answers));
     }
 

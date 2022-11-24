@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="167a8a6d-c77f-473d-a1c5-e367adfeeaf7" name="Changes" comment="Added tests with new graph and different initiators.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AdditionalClasses/CreateData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/LabGraph.xlsx" afterDir="false" />
+    <list default="true" id="167a8a6d-c77f-473d-a1c5-e367adfeeaf7" name="Changes" comment="Added excel parser to create XML configs for nodes from excel table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APDescription.txt" beforeDir="false" afterPath="$PROJECT_DIR$/APDescription.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AdditionalClasses/ParsingProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AdditionalClasses/ParsingProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Agents/NodeAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Agents/NodeAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AgentsFactory/AgentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AgentsFactory/AgentFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Behaviours/InitiatorBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Behaviours/InitiatorBehaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Behaviours/InitiatorFMSBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Behaviours/InitiatorFMSBehaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Behaviours/InitiatorParallelBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Behaviours/InitiatorParallelBehaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Behaviours/RequestProcessingBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Behaviours/RequestProcessingBehaviour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Behaviours/ResultsProcessingBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Behaviours/ResultsProcessingBehaviour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/LabGraph/node2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/LabGraph/node2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +78,7 @@
       <recent name="B:\Java\MAS\Labs\LR3\src\main\resources\TestFromBook" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.CreateData">
     <configuration name="CreateData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AdditionalClasses.CreateData" />
       <module name="LR3" />
@@ -125,8 +128,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.CreateData" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -144,7 +147,7 @@
       <workItem from="1668087475885" duration="512000" />
       <workItem from="1668093229186" duration="10000" />
       <workItem from="1669048010808" duration="1132000" />
-      <workItem from="1669226403512" duration="4173000" />
+      <workItem from="1669226403512" duration="12714000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.&#10;Added Logging + lombok">
       <created>1667891413363</created>
@@ -174,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668087969742</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added excel parser to create XML configs for nodes from excel table">
+      <created>1669230655471</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669230655471</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +207,7 @@
     <MESSAGE value="Made node configuration and it's unmarshalling." />
     <MESSAGE value="First realization is done." />
     <MESSAGE value="Added tests with new graph and different initiators." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tests with new graph and different initiators." />
+    <MESSAGE value="Added excel parser to create XML configs for nodes from excel table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added excel parser to create XML configs for nodes from excel table" />
   </component>
 </project>

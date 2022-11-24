@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><cfg><name>Node12</name><initiator>false</initiator><links><link><neighbour>Node9</neighbour><weight>24</weight></link><link><neighbour>Node10</neighbour><weight>23</weight></link><link><neighbour>Node11</neighbour><weight>9</weight></link></links></cfg>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cfg>
+    <name>Node12</name>
+    <initiator>false</initiator>
+    <links>
+        <link>
+            <neighbour>Node9</neighbour>
+            <weight>24</weight>
+        </link>
+        <link>
+            <neighbour>Node10</neighbour>
+            <weight>23</weight>
+        </link>
+        <link>
+            <neighbour>Node11</neighbour>
+            <weight>9</weight>
+        </link>
+    </links>
+</cfg>

@@ -25,8 +25,8 @@ public class ResultsProcessingBehaviour extends OneShotBehaviour {
         int allDeadLocs = deadLocs.size();
         answers.removeAll(deadLocs);
         List<MsgContent> rightWays = answers;
-        Optional<MsgContent> bestWay = bestWay(rightWays);
         int allRightWays = rightWays.size();
+        Optional<MsgContent> bestWay = bestWay(rightWays);
 
         log.info("\nТупиковые маршруты: \n{}", deadLocs.size() == 0 ? "отсутствуют": joinList(deadLocs));
         log.info("\nЗавершенные маршруты: \n{}", rightWays.size() == 0 ? "отсутствуют": joinList(rightWays));
@@ -37,24 +37,27 @@ public class ResultsProcessingBehaviour extends OneShotBehaviour {
     }
 
     private Optional<MsgContent> bestWay(List<MsgContent> rightWays) {
-        Optional<MsgContent> best = rightWays.stream().sorted(new Comparator<MsgContent>() {
-            @Override
-            public int compare(MsgContent o1, MsgContent o2) {
-                if (o1.getWeight() > o2.getWeight()) {
-                    return 1;
-                } else if (o1.getWeight() == o2.getWeight()) {
-                    return 0;
-                } else {
-                    return -1;
-                }
+        Optional<MsgContent> best = rightWays.stream().sorted(
+                (o1, o2) -> {
+            if (o1.getWeight() > o2.getWeight()) {
+                return 1;
+            } else if (o1.getWeight() == o2.getWeight()) {
+                return 0;
+            } else {
+                return -1;
             }
-        }).findFirst();
+        })
+                .findFirst();
         return best;
     }
     private String presentMsgContent(MsgContent content) {
-        return "    passed nodes: " + content.getPassedNodes().toString() + " full weight: " + content.getWeight();
+        return "\tpassed nodes: " + content.getPassedNodes().toString() +
+                " full weight: " + content.getWeight();
     }
 
+    /**
+     * Можно и лутчше, но так понятнее
+     */
     private String joinList(List<MsgContent> list) {
         List<String> ways = new ArrayList<>();
         list.forEach(way -> ways.add(presentMsgContent(way)));

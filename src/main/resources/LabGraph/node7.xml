@@ -1,1 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><cfg><name>Node7</name><initiator>false</initiator><links><link><neighbour>Node4</neighbour><weight>24</weight></link><link><neighbour>Node5</neighbour><weight>11</weight></link><link><neighbour>Node6</neighbour><weight>12</weight></link><link><neighbour>Node8</neighbour><weight>2</weight></link><link><neighbour>Node9</neighbour><weight>23</weight></link></links></cfg>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cfg>
+    <name>Node7</name>
+    <initiator>false</initiator>
+    <links>
+        <link>
+            <neighbour>Node4</neighbour>
+            <weight>24</weight>
+        </link>
+        <link>
+            <neighbour>Node5</neighbour>
+            <weight>11</weight>
+        </link>
+        <link>
+            <neighbour>Node6</neighbour>
+            <weight>12</weight>
+        </link>
+        <link>
+            <neighbour>Node8</neighbour>
+            <weight>2</weight>
+        </link>
+        <link>
+            <neighbour>Node9</neighbour>
+            <weight>23</weight>
+        </link>
+    </links>
+</cfg>

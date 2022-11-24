@@ -1,1 +1,35 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><cfg><name>Node4</name><initiator>false</initiator><links><link><neighbour>Node1</neighbour><weight>5</weight></link><link><neighbour>Node2</neighbour><weight>27</weight></link><link><neighbour>Node3</neighbour><weight>25</weight></link><link><neighbour>Node5</neighbour><weight>19</weight></link><link><neighbour>Node6</neighbour><weight>1</weight></link><link><neighbour>Node7</neighbour><weight>24</weight></link><link><neighbour>Node8</neighbour><weight>13</weight></link></links></cfg>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cfg>
+    <name>Node4</name>
+    <initiator>false</initiator>
+    <links>
+        <link>
+            <neighbour>Node1</neighbour>
+            <weight>5</weight>
+        </link>
+        <link>
+            <neighbour>Node2</neighbour>
+            <weight>27</weight>
+        </link>
+        <link>
+            <neighbour>Node3</neighbour>
+            <weight>25</weight>
+        </link>
+        <link>
+            <neighbour>Node5</neighbour>
+            <weight>19</weight>
+        </link>
+        <link>
+            <neighbour>Node6</neighbour>
+            <weight>1</weight>
+        </link>
+        <link>
+            <neighbour>Node7</neighbour>
+            <weight>24</weight>
+        </link>
+        <link>
+            <neighbour>Node8</neighbour>
+            <weight>13</weight>
+        </link>
+    </links>
+</cfg>

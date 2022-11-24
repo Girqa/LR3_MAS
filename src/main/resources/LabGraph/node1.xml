@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cfg>
     <name>Node1</name>
-    <initiator>true</initiator>
-    <lookForAgent>Node12</lookForAgent>
+    <initiator>false</initiator>
     <links>
         <link>
             <neighbour>Node2</neighbour>

@@ -20,6 +20,7 @@ final public class ParsingProvider {
         log.debug("Marshalling {}", obj.getClass());
         JAXBContext context = JAXBContext.newInstance(clazz);
         Marshaller marshaller = context.createMarshaller();
+        marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
         marshaller.marshal(obj, saveFile);
         log.debug("Marshalling was successful");
     }
